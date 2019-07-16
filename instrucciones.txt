@@ -1,0 +1,3 @@
+#Agregar permiso de escritura en SELINUX
+chcon -t httpd_sys_rw_content_t /var/www/laravel/storage/logs/ -R
+chcon -t httpd_sys_rw_content_t /var/www/laravel/storage/framework/ -R
